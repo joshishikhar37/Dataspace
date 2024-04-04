@@ -15,12 +15,12 @@ export default function Home() {
     console.log("Cookies after removal:", Cookies.get());
   };
 
-  useEffect(() => {
-    const accessToken = Cookies.get("accessToken");
-    if (!accessToken) {
-      router.push("/login");
-    }
-  }, []);
+  // useEffect(() => {
+  //   const accessToken = Cookies.get("accessToken");
+  //   if (!accessToken) {
+  //     router.push("/login");
+  //   }
+  // }, []);
 
   return (
     <div className="text-black">

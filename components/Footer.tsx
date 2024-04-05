@@ -8,7 +8,7 @@ const Footer = () => {
         height: "250.39px"
     }
   return (
-    <div className='text-white bg-[#0D5077]'>
+    <div className=' bg-[#0D5077]'>
     <div className='flex w-[100%] text-white bg-[#0D5077] px-10  py-4'>
         <div className='flex w-[80%] pt-10'>
         <div className='w-[45%] flex-col pl-10'>
@@ -55,7 +55,9 @@ const Footer = () => {
        <div className='pr-10'><img src= "/footerimage.png" alt="footerimage" style={imagestyles} className='pl-10' /></div> 
     
     </div>
-    <div className='flex justify-around border-t-2 border-[#E5E7EB] border-b-2 border-[#E5E7EB] px-2 py-3'>
+    <div className='mx-16'>
+
+    <div className='flex justify-between border-t-2 border-[#E5E7EB] border-b-2 border-[#E5E7EB] px-2 py-2 text-white'>
         <div>ds@ds.com.np</div>
         <div>Putalisadak, Kathmandu, Nepal</div>
         <div>+977-1-5369718</div>
@@ -67,7 +69,7 @@ const Footer = () => {
                     src="https://static-00.iconduck.com/assets.00/facebook-icon-512x512-seb542ju.png"
                     alt=""
                     className="w-6 rounded-full"
-                  />
+                    />
                
               </li>
 
@@ -77,7 +79,7 @@ const Footer = () => {
                     src="https://static-00.iconduck.com/assets.00/linkedin-icon-512x512-6xtrjbtc.png"
                     alt=""
                     className="w-7 rounded-full"
-                  />
+                    />
                
               </li>
 
@@ -88,21 +90,22 @@ const Footer = () => {
                     src="https://static-00.iconduck.com/assets.00/twitter-icon-2048x2048-pm1hdjoo.png"
                     alt=""
                     className="w-7 rounded-full"
-                  />
+                    />
                
               </li>
 
               <li className="">
                     <img
-                        src="https://static-00.iconduck.com/assets.00/telegram-icon-512x512-6xtrjbtc.png"
+                        src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
                         alt=""
                         className="w-7 h-7 rounded-full"
-              />
-    </li>
+                        />
+                </li>
             </ul>
           </div>
     </div>
-    <div className='flex justify-end mr-5'> © 2021 All Rights Reserved</div>
+    </div>
+    <div className='flex justify-end mr-16 text-white text-opacity-50'>© 2021 All Rights Reserved</div>
     
    </div>
 

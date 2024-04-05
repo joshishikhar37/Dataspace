@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
+import Herosection from "@/components/herosection";
 
 export default function Home() {
   const router = useRouter();
@@ -23,10 +24,17 @@ export default function Home() {
   // }, []);
 
   return (
+
     <div className="text-black">
+      <Herosection />
       Home page test demo
       <img src="" alt="" />
       <br />
+
+
+
+
+      
       <Link href="/login">Login page</Link>
       <br />
       <Link href="/register">Register Page</Link>

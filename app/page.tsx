@@ -33,9 +33,26 @@ export default function Home() {
       <div className="absolute top-36 w-full ">
         <NavBar />
       </div>
+      <div className="">
+        <section className="py-10 shadow-lg absolute top-[99%] left-[20%] flex-col   justify-center text-center h-60 w-[65%] rounded-lg bg-white ">
+          <h1 className="text-sm font-bold mb-10">
+            Find the Perfect Domain for your
+          </h1>
 
-
- 
+          <div>
+            <input
+              type="text"
+              placeholder="Search the Domain"
+              className="text-sm rounded-l-lg shadow-lg w-[70%] h-14  pl-10 border-none"
+            />
+            <button
+              className="text-sm rounded-r-lg h-14 w-44 text-white bg-[#0D5077] "
+            >
+              Search
+            </button>
+          </div>
+        </section>
+      </div>
       Home page test demo
       <img src="" alt="" />
       <br />

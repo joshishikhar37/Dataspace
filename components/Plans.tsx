@@ -8,7 +8,7 @@ const Plans = () => {
     height: "113.34px"
     }
   return (
-    <div className='shadow-2xl rounded-lg w-[300px] ml-16 my-10 rounded-lg'>
+    <div className='shadow-2xl rounded-lg w-[300px] my-10 rounded-lg'>
         <div className='relative '>
           <img src= "/plans.png" alt="footerimage" style={imagestyles} className='rounded-t-lg' />
           <h1 className='absolute top-[70%] left-10 text-white font-9xl font-black'>Virtual Private Server Bronze</h1>

@@ -36,10 +36,10 @@ export default function Home() {
        <div className="absolute top-36 w-full ">
         <NavBar />
       </div>
-      <div className="">
-        <section className="py-10 shadow-lg absolute top-[72%] left-[20%] flex-col   justify-center text-center h-60 w-[65%] rounded-lg bg-white ">
-          <h1 className="mr-15 text-2xl font-bold mb-10">
-            Find the Perfect Domain for your
+      <div className=" flex justify-center">
+        <section className="py-10 shadow-lg absolute top-[72%] flex-col flex justify-center text-center h-60 w-[65%] rounded-lg bg-white ">
+          <h1 className="text-xl font-normal mb-10">
+            Find  the  Perfect  Domain  for  your
           </h1>
 
           <div>
@@ -58,8 +58,8 @@ export default function Home() {
         </section>
       </div>
       <section className="">
-        <h1 className='flex justify-center text-2xl pt-36'>Our Popular Plans & Pricing</h1>
-        <div className="flex gap-3">
+        <h1 className='flex justify-center text-4xl pt-36'>Our Popular Plans & Pricing</h1>
+        <div className="flex justify-center gap-2">
           <Plans/>
           <Plans/>
           <Plans/>

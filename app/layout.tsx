@@ -22,9 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html className={poppins.className}>
-      <body className="">
+      <body className="flex-col">
+        <div className=" absolute top-0 w-full">
+
         <NavBar />
-        <main className="">{children}</main>
+        </div>
+        <main className="static">{children}</main>
         <Footer />
       </body>
     </html>

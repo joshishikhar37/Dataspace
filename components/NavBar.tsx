@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="h-32  px-6 relative ">
+    <div className="h-32 relative px-6  bg-blue-900">
       <img src="/dataspacelogo1.png" alt="" className="h-16 absolute top-5" />
       <div className="flex justify-end">
         <ul className="flex gap-12 absolute top-12 right-32 text-white font-light text-xl  ">

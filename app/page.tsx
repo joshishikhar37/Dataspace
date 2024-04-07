@@ -46,7 +46,7 @@ export default function Home() {
               className="text-sm rounded-l-lg shadow-lg w-[70%] h-14  pl-10 border-none"
             />
             <button
-              className="text-sm rounded-r-lg h-14 w-44 text-white bg-[#0D5077] "
+              className="text-sm shadow-lg  rounded-r-lg h-14 w-44 text-white bg-[#0D5077] hover:scale-105 "
             >
               Search
             </button>

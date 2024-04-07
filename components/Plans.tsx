@@ -1,20 +1,21 @@
 import React from 'react'
 import Buttoncart from "@/components/buttoncart"
 
+
 const Plans = () => {
   const imagestyles ={
     width: "308px",
     height: "113.34px"
     }
   return (
-    <div className='shadow-2xl rounded-lg w-[308px] h-[420px] ml-16 my-10 rounded-lg '>
-        <div className='relative'>
+    <div className='shadow-2xl rounded-lg w-[300px] ml-16 my-10 rounded-lg'>
+        <div className='relative '>
           <img src= "/plans.png" alt="footerimage" style={imagestyles} className='rounded-t-lg' />
           <h1 className='absolute top-[70%] left-10 text-white font-9xl font-black'>Virtual Private Server Bronze</h1>
         </div>
         
-        <div className='h-[72.7%]'>
-          <div className='h-[80%] text-black flex flex-col gap-1 py-5'>
+        <div className=''>
+          <div className=' text-black flex flex-col gap-1 py-2 font-large'>
             <div className='flex mx-auto '>
                 CORE CPU
             </div>
@@ -39,7 +40,7 @@ const Plans = () => {
             </div>
             
           </div >
-          <div className='h-[20%] '>
+          <div className='flex justify-center hover:scale-105'>
             <Buttoncart/>
           </div>
         </div>

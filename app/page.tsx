@@ -6,7 +6,8 @@ import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 import Herosection from "@/components/herosection";
 import NavBar from "@/components/NavBar";
-import MyCarousel from "@/components/heroslide";
+
+import Plans from "@/components/Plans";
 
 export default function Home() {
   const router = useRouter();
@@ -53,6 +54,13 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <section className="w-[100%] flex gap-2">
+        <Plans/>
+        <Plans/>
+        <Plans/>
+        <Plans/>
+        
+      </section>
       Home page test demo
       <img src="" alt="" />
       <br />

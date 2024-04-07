@@ -44,9 +44,8 @@ const Plans = () => {
             <Buttoncart/>
           </div>
         </div>
-     
-   
-    </div>
+      </div>
+
   )
 }
 

@@ -6,6 +6,7 @@ import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 import Herosection from "@/components/herosection";
 import NavBar from "@/components/NavBar";
+import Plans from "@/components/Plans";
 
 
 export default function Home() {
@@ -37,7 +38,7 @@ export default function Home() {
       </div>
       <div className="">
         <section className="py-10 shadow-lg absolute top-[72%] left-[20%] flex-col   justify-center text-center h-60 w-[65%] rounded-lg bg-white ">
-          <h1 className="text-l font-bold mb-10">
+          <h1 className="mr-15 text-2xl font-bold mb-10">
             Find the Perfect Domain for your
           </h1>
 
@@ -50,21 +51,34 @@ export default function Home() {
             <button
 
               className="text-sm shadow-lg  rounded-r-lg h-14 w-44 text-white bg-[#0D5077] hover:scale-105 "
-
             >
               Search
             </button>
           </div>
         </section>
       </div>
-      Home page test demo
+      <section className="">
+        <h1 className='flex justify-center text-2xl pt-36'>Our Popular Plans & Pricing</h1>
+        <div className="flex gap-3">
+          <Plans/>
+          <Plans/>
+          <Plans/>
+          <Plans/>
+          <Plans/>
+        </div>
+      </section>
+      <section>
+      <h1 className='flex justify-center text-3xl pb-7'>Our Valued Costumers</h1>
+      
+      </section>
+      {/* Home page test demo
       <img src="" alt="" />
       <br />
       <Link href="/login">Login page</Link>
       <br />
       <Link href="/register">Register Page</Link>
       <br />
-      <button onClick={handleLogout}>Logout</button>
+      <button onClick={handleLogout}>Logout</button> */}
     </div>
   );
 }

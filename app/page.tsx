@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 import Herosection from "@/components/herosection";
+import NavBar from "@/components/NavBar";
+import MyCarousel from "@/components/heroslide";
 
 export default function Home() {
   const router = useRouter();
@@ -24,17 +26,19 @@ export default function Home() {
   // }, []);
 
   return (
+    <div className="flex-col text-black">
+      <div className="relative">
+        <Herosection />
+      </div>
+      <div className="absolute top-36 w-full ">
+        <NavBar />
+      </div>
 
-    <div className="text-black">
-      <Herosection />
+
+ 
       Home page test demo
       <img src="" alt="" />
       <br />
-
-
-
-
-      
       <Link href="/login">Login page</Link>
       <br />
       <Link href="/register">Register Page</Link>

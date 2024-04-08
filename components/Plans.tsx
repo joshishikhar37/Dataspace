@@ -18,9 +18,9 @@ const Plans = () => {
   };
 
   return (
-    <div className='flex justify-between'>
+    <div className='flex justify-between mx-16'>
       {Object.keys(plans).map((planKey: keyof PlansObject) => (
-        <div key={planKey} className='shadow-2xl rounded-lg w-[300px] my-10 mx-16'>
+        <div key={planKey} className='shadow-2xl rounded-lg w-[300px] my-10'>
           <div className='relative flex justify-center'>
             <img src="/plans.png" alt="footerimage" style={imagestyles} className='rounded-t-lg' />
             <h1 className='absolute top-[60%] px-6 text-white font-black '>{planKey}</h1>
@@ -36,6 +36,9 @@ const Plans = () => {
             </div>
             <div className='flex justify-center hover:scale-105'>
               <Buttoncart />
+
+
+              
             </div>
           </div>
         </div>

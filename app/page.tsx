@@ -59,8 +59,7 @@ export default function Home() {
       </div>
       <section className="">
         <h1 className='flex justify-center text-4xl pt-36'>Our Popular Plans & Pricing</h1>
-        <div className="flex justify-center gap-2">
-          <Plans/>
+        <div className="flex justify-center gap-40 mx-16">
           <Plans/>
           <Plans/>
           <Plans/>

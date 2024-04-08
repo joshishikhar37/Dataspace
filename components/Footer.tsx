@@ -8,14 +8,14 @@ const Footer = () => {
         height: "250.39px"
     }
   return (
-    <div className=' bg-[#0D5077]'>
-    <div className='flex w-[100%] text-white bg-[#0D5077] px-10  py-4'>
+    <div className=' bg-[#0D5077] '>
+    <div className='flex w-[100%] text-white bg-[#0D5077]  ml-16 py-4'>
         <div className='flex w-[80%] pt-10'>
-        <div className='w-[45%] flex-col pl-10'>
+        <div className='w-[45%] flex-col'>
         <h1 className='text-3xl'>Service</h1>
             <div className='flex gap-20 pl-5 pt-3 '>
 
-                <ul className='gap-10 list-disc text-1xl'>
+                <ul className='gap-10 list-disc text-1xl'>  
                     <li className='py-1'>Co-loocation</li>
                     <li className='py-1'>Virtual Private Server</li>
                     <li className='py-1'>Web-Hosting</li>
@@ -52,12 +52,12 @@ const Footer = () => {
             </div>
         </div>
         </div>
-       <div className='pr-10'><img src= "/footerimage.png" alt="footerimage" style={imagestyles} className='pl-10' /></div> 
+       <div className='px-'><img src= "/footerimage.png" alt="footerimage" style={imagestyles} className='' /></div> 
     
     </div>
     <div className='mx-16'>
 
-    <div className='flex justify-between border-t-2 border-[#E5E7EB] border-b-2 border-[#E5E7EB] px-2 py-2 text-white'>
+    <div className='flex justify-between border-t-2 border-[#E5E7EB] border-b-2 border-[#E5E7EB] px- py-2 text-white'>
         <div>ds@ds.com.np</div>
         <div>Putalisadak, Kathmandu, Nepal</div>
         <div>+977-1-5369718</div>

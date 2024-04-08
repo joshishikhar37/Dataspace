@@ -6,6 +6,7 @@ import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 import Herosection from "@/components/herosection";
 import NavBar from "@/components/NavBar";
+import Plans from "@/components/Plans";
 
 
 export default function Home() {

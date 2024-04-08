@@ -8,6 +8,7 @@ import Herosection from "@/components/herosection";
 import NavBar from "@/components/NavBar";
 import Plans from "@/components/Plans";
 
+
 export default function Home() {
   const router = useRouter();
 
@@ -25,15 +26,15 @@ export default function Home() {
   //   }
   // }, []);
 
+  
+
   return (
-    <div className="flex-col text-black">
+    <div className="flex-col text-black" >
       <div className="relative">
         <Herosection />
       </div>
-
-     
-
-      </div>
+       
+      
       <div className=" flex justify-center">
         <section className="py-10 shadow-lg absolute top-[72%] flex-col flex justify-center text-center h-60 w-[65%] rounded-lg bg-white ">
           <h1 className="text-xl font-normal mb-10">
@@ -68,8 +69,14 @@ export default function Home() {
       <h1 className='flex justify-center text-3xl pb-7'>Our Valued Costumers</h1>
       
       </section>
-
-
+      {/* Home page test demo
+      <img src="" alt="" />
+      <br />
+      <Link href="/login">Login page</Link>
+      <br />
+      <Link href="/register">Register Page</Link>
+      <br />
+      <button onClick={handleLogout}>Logout</button> */}
     </div>
   );
 }

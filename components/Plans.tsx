@@ -1,18 +1,11 @@
-import React from 'react';
-import Buttoncart from "@/components/buttoncart";
-import plans from "@/assets/plans.json";
+import React from 'react'
+import Buttoncart from "@/components/buttoncart"
+import plans from "@/assets/plans.json"
 
-type PlanCategory = {
-  title: string;
-  description: string;
-};
 
-type PlansObject = {
-  [key: string]: PlanCategory[];
-};
 
 const Plans = () => {
-  const imagestyles = {
+  const imagestyles ={
     width: "308px",
     height: "113.34px"
   };

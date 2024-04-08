@@ -15,13 +15,13 @@ const Footer = () => {
         <div className='flex w-[80%] pt-10'>
         <div className='w-[45%] flex-col'>
         <h1 className='text-3xl'>Service</h1>
-            <div className='flex gap-20 pl-5 pt-3 '>
+            <div className='flex gap-28 pl-5 pt-3 '>
 
                 <ul className='gap-10 list-disc text-1xl'>  
                     <li className='py-1'>Co-loocation</li>
                     <li className='py-1'>Virtual Private Server</li>
                     <li className='py-1'>Web-Hosting</li>
-                    <li className='py-1'>Enterprise Secure E-mail</li>
+                    <li className='py-1'>Enterprise Secure E-mailkfa</li>
                     <li className='py-1'>Backup and replacation </li>
 
                 </ul>

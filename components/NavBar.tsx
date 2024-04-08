@@ -24,11 +24,12 @@ const NavBar = () => {
 
   return (
 
-    <div className={`top-10 ${scrolled ? 'bg-white' : ''}`}>
-      <div className="h-32 mt-0 relative px-6 ">
+    <div className={` px-16 top-10 ${scrolled ? 'bg-white' : ''}`}>
+      <div className="h-32 mt-0 relative">
 
         <img src="/dataspacelogo1.png" alt="" className="h-16 absolute top-5" />
         <div className="flex justify-end">
+
           <ul className={`flex gap-12 absolute top-12 right-32 font-light text-xl ${scrolled ? 'text-black' : 'text-white/60'}`}>
             <li>Home</li>
             <li>Service</li>
@@ -39,7 +40,7 @@ const NavBar = () => {
           <img
             src="/NavImg.jpeg"
             alt=""
-            className="h-12 w-12 rounded-full absolute top-9 right-12"
+            className="h-12 w-12 rounded-full absolute top-9"
           />
         </div>
       </div>

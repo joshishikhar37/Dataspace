@@ -38,10 +38,7 @@ export default function Home() {
   
       <section className="">
         <h1 className='flex justify-center text-4xl pt-36'>Our Popular Plans & Pricing</h1>
-        <div className="flex justify-between mx-16">
-          <Plans/>
-          <Plans/>
-          <Plans/>
+        <div className="mx-16 py-11">
           <Plans/>
         </div>
       </section> 

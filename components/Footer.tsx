@@ -8,8 +8,10 @@ const Footer = () => {
         height: "250.39px"
     }
   return (
-    <div className=' bg-[#0D5077] '>
-    <div className='flex w-[100%] text-white bg-[#0D5077]  ml-16 py-4'>
+    <div className=' bg-[#0D5077] '>  
+    
+
+    <div className='flex justify-center w-[100%] text-white bg-[#0D5077] py-4 '>
         <div className='flex w-[80%] pt-10'>
         <div className='w-[45%] flex-col'>
         <h1 className='text-3xl'>Service</h1>
@@ -55,6 +57,7 @@ const Footer = () => {
        <div className='px-'><img src= "/footerimage.png" alt="footerimage" style={imagestyles} className='' /></div> 
     
     </div>
+    
     <div className='mx-16'>
 
     <div className='flex justify-between border-t-2 border-[#E5E7EB] border-b-2 border-[#E5E7EB] px- py-2 text-white'>

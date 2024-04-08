@@ -1,40 +1,54 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import ButtonHerosection from "./buttonHerosection";
 
 const Herosection = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
+    {
+      image: "/hero1.png",
+      caption: "CO-LOCATION"
+    },
+    {
+      image: "/bg2.jpeg",
+      caption: "VIRTUAL PRIVATE SERVER"
+    }
+    // Add more slides as needed
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 1900); // Change slide every 5 seconds (adjust as needed)
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+  };
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  };
+
   const imgStyles = {
     width: "100vw",
     height: "667px",
+    transition: "opacity 0.5s ease-in-out" // Smooth transition for opacity
   };
-  const divStyles = {
-    width: "1440px",
-    height: "667px",
-  };
-  return (
-    <main className="flex justify-between w-[max-content]">
-      <div className="relative">
-        <div>
-          <div style={divStyles} className=" absolute bg-black/50"></div>
-          <img src="/hero1.png" alt="" style={imgStyles} className="w-max-screen" />
-        </div>
-        <div className=" absolute top-[50%] left-[3%]">
-          <h1 className="text-7xl text-white">CO-LOCATION</h1>
-          <ButtonHerosection />
-        </div>
-      </div>
-      <div className="relative">
-        <div>
-          <div style={divStyles} className=" absolute bg-black/50"></div>
-          <img src="/bg2.jpeg" alt="" style={imgStyles} />
-        </div>
-        <div className=" absolute top-[50%] left-[3%]">
-          <h1 className="text-7xl text-white">VIRTUAL PRIVATE SERVER</h1>
-          <ButtonHerosection />
-        </div>
-      </div>
 
-     
+  return (
+    <main className="flex justify-between w-[max-content] relative">
+      <div className="relative">
+        <div style={{ width: "100vw", height: "667px" }} className="absolute bg-black/50"></div>
+        <img src={slides[currentSlide].image} alt={slides[currentSlide].caption} style={imgStyles} className="w-max-screen" />
+        <div className="absolute top-[50%] left-[3%]">
+          <h1 className="text-7xl text-white">{slides[currentSlide].caption}</h1>
+          <ButtonHerosection />
+        </div>
+      </div>
+      
     </main>
   );
 };

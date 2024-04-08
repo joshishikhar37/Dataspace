@@ -7,7 +7,7 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 120) {
+      if (offset > 350) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -25,12 +25,12 @@ const NavBar = () => {
   return (
 
 
-    <div className={`px-16 top-10 ${scrolled ? 'bg-white' : ''}`}>
+    <div className={`px-9 top-10 ${scrolled ? 'bg-white' : ''}`} style={{ transition: 'background-color 0.4s ease-in-out ' }}>
       <div className="h-32 mt-0 relative px-6 ">
 
         <img src="/dataspacelogo1.png" alt="" className="h-16 absolute top-5" />
         <div className="flex justify-end">
-          <ul className={`flex gap-8 absolute top-12 right-32 font-light text-xl ${scrolled ? 'text-black' : 'text-white/60'}`}>
+          <ul className={`flex gap-8 absolute top-12 right-32 font-light text-2xl ${scrolled ? 'text-black' : 'text-white'}`}>
             <li>Home</li>
             <li>Service</li>
             <li>About Us</li>

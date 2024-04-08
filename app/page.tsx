@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import Herosection from "@/components/herosection";
 import NavBar from "@/components/NavBar";
 
+
 export default function Home() {
   const router = useRouter();
 
@@ -24,21 +25,31 @@ export default function Home() {
   //   }
   // }, []);
 
+  
+
   return (
-    <div className="flex-col text-black">
+    <div className="flex-col text-black" >
       <div className="relative">
         <Herosection />
       </div>
- 
-     
-      Home page test demo
-      <img src="" alt="" />
-      <br />
-      <Link href="/login">Login page</Link>
-      <br />
-      <Link href="/register">Register Page</Link>
-      <br />
-      <button onClick={handleLogout}>Logout</button>
+
+       
+  
+      <section className="">
+        <h1 className='flex justify-center text-4xl pt-36'>Our Popular Plans & Pricing</h1>
+        <div className="flex justify-between mx-16">
+          <Plans/>
+          <Plans/>
+          <Plans/>
+          <Plans/>
+        </div>
+      </section> 
+      <section>
+      <h1 className='flex justify-center text-3xl pb-7'>Our Valued Costumers</h1>
+      
+      </section>
+    
+
     </div>
   );
 }

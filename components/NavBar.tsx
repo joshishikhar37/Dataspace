@@ -24,6 +24,7 @@ const NavBar = () => {
 
   return (
 
+
     <div className={`px-16 top-10 ${scrolled ? 'bg-white' : ''}`}>
       <div className="h-32 mt-0 relative px-6 ">
 
@@ -39,7 +40,7 @@ const NavBar = () => {
           <img
             src="/NavImg.jpeg"
             alt=""
-            className="h-12 w-12 rounded-full absolute top-9 right-12"
+            className="h-12 w-12 rounded-full absolute top-9"
           />
         </div>
       </div>

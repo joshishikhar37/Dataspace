@@ -25,9 +25,11 @@ export default function RootLayout({
     <html className={poppins.className}>
       <body className="flex-col">
         <main className="">{children}</main>
+
         <div className="fixed top-[-0] w-full">
           <NavBar />
         </div>
+
 
         <Footer />
       </body>

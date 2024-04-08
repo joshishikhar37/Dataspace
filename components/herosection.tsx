@@ -18,7 +18,7 @@ const Herosection = () => {
           <div style={divStyles} className=" absolute bg-black/50"></div>
           <img src="/hero1.png" alt="" style={imgStyles} className="w-max-screen" />
         </div>
-        <div className=" absolute top-[50%] left-[7%]">
+        <div className=" absolute top-[50%] left-[3%]">
           <h1 className="text-7xl text-white">CO-LOCATION</h1>
           <ButtonHerosection />
         </div>
@@ -28,7 +28,7 @@ const Herosection = () => {
           <div style={divStyles} className=" absolute bg-black/50"></div>
           <img src="/bg2.jpeg" alt="" style={imgStyles} />
         </div>
-        <div className=" absolute top-[50%] left-[7%]">
+        <div className=" absolute top-[50%] left-[3%]">
           <h1 className="text-7xl text-white">VIRTUAL PRIVATE SERVER</h1>
           <ButtonHerosection />
         </div>

@@ -24,7 +24,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className={`px-9 top-10 ${scrolled ? 'bg-white' : ''}`} style={{ transition: 'background-color 0.4s ease-in-out ' }}>
+    <div className={`px-3 top-10 ${scrolled ? 'bg-white' : ''}`} style={{ transition: 'background-color 0.4s ease-in-out ' }}>
       <div className="h-32 mt-0 relative px-6 ">
         <img src="/dataspacelogo1.png" alt="" className="h-16 absolute top-5" />
         <div className="flex justify-end">

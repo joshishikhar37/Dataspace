@@ -10,7 +10,6 @@ import Plans from "@/components/Plans";
 import Valuablecustomer from "@/components/valuablecustomer";
 import SearchDomain from "@/components/searchDomain";
 
-
 export default function Home() {
   const router = useRouter();
 
@@ -28,29 +27,30 @@ export default function Home() {
   //   }
   // }, []);
 
-  
-
   return (
-    <div className="flex-col text-black" >
-      <div className="relative">
+    <div className="flex-col text-black relative">
+      <div className="mb-28">
         <Herosection />
       </div>
 
-      {/* <SearchDomain/> */}
-       
-  
-      <section className="">
-        <h1 className='flex justify-center text-4xl pt-36'>Our Popular Plans & Pricing</h1>
-        <div className="mx-16 py-11">
-          <Plans/>
-        </div>
-      </section> 
-      <section>
-      <h1 className='flex justify-center text-3xl pb-7'>Our Valued Costumers</h1>
-      <Valuablecustomer/>
-      </section>
-    
+      <div className="absolute top-[30%] w-full">
+        <SearchDomain />
+      </div>
 
+      <section className="">
+        <h1 className="flex justify-center text-4xl pt-36">
+          Our Popular Plans & Pricing
+        </h1>
+        <div className="mx-16 py-11 mb-28">
+          <Plans />
+        </div>
+      </section>
+      <section>
+        <h1 className="flex justify-center text-3xl pb-7">
+          Our Valued Costumers
+        </h1>
+        <Valuablecustomer />
+      </section>
     </div>
   );
 }

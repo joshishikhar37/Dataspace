@@ -36,7 +36,7 @@ export default function Home() {
        
       
       <div className=" flex justify-center">
-        <section className="py-10 shadow-lg absolute top-[72%] flex-col flex justify-center text-center h-60 w-[65%] rounded-lg bg-white ">
+        {/* <section className="py-10 shadow-lg absolute top-[72%] flex-col flex justify-center text-center h-60 w-[65%] rounded-lg bg-white ">
           <h1 className="text-xl font-normal mb-10">
             Find  the  Perfect  Domain  for  your
           </h1>
@@ -54,17 +54,17 @@ export default function Home() {
               Search
             </button>
           </div>
-        </section>
+        </section> */}
       </div>
       <section className="">
         <h1 className='flex justify-center text-4xl pt-36'>Our Popular Plans & Pricing</h1>
-        <div className="flex justify-center gap-40 mx-16">
+        <div className="flex justify-between mx-16">
           <Plans/>
           <Plans/>
           <Plans/>
           <Plans/>
         </div>
-      </section>
+      </section> 
       <section>
       <h1 className='flex justify-center text-3xl pb-7'>Our Valued Costumers</h1>
       

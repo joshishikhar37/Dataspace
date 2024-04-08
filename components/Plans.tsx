@@ -1,7 +1,4 @@
 import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import Buttoncart from "@/components/buttoncart";
 import plans from "@/assets/plans.json";
 
@@ -20,39 +17,17 @@ const Plans = () => {
     height: "113.34px"
   };
 
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4, // Adjust this according to the number of plans you want to show at once
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
-  };
-
   return (
-    <Slider {...sliderSettings}>
+    <div className='flex justify-between'>
       {Object.keys(plans).map((planKey: keyof PlansObject) => (
-        <div key={planKey} className=' rounded-lg w- shadow-xl'>
+        <div key={planKey} className='shadow-2xl rounded-lg w-[300px] my-10 mx-16'>
           <div className='relative flex justify-center'>
             <img src="/plans.png" alt="footerimage" style={imagestyles} className='rounded-t-lg' />
             <h1 className='absolute top-[60%] px-6 text-white font-black '>{planKey}</h1>
           </div>
           <div>
             <div className='text-black flex flex-col gap-1 py-2 font-large'>
-              {(plans as PlansObject)[planKey].map((item, index) => (
+              {(plans as PlansObject)[planKey].map((item, index)  => (
                 <div key={index} className='flex mx-auto'>
                   <span>{item.title}</span>
                   <span>{item.description}</span>
@@ -65,8 +40,8 @@ const Plans = () => {
           </div>
         </div>
       ))}
-    </Slider>
+    </div>
   );
 };
 
-export default Plans;
+export default Plans

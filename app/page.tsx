@@ -7,6 +7,8 @@ import { useRouter } from "next/navigation";
 import Herosection from "@/components/herosection";
 import NavBar from "@/components/NavBar";
 import Plans from "@/components/Plans";
+import Valuablecustomer from "@/components/valuablecustomer";
+import SearchDomain from "@/components/searchDomain";
 
 
 export default function Home() {
@@ -34,6 +36,7 @@ export default function Home() {
         <Herosection />
       </div>
 
+      {/* <SearchDomain/> */}
        
   
       <section className="">
@@ -47,7 +50,7 @@ export default function Home() {
       </section> 
       <section>
       <h1 className='flex justify-center text-3xl pb-7'>Our Valued Costumers</h1>
-      
+      <Valuablecustomer/>
       </section>
     
 

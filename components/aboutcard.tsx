@@ -3,22 +3,23 @@ import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 const Aboutcard = () => {
   return (
-    <div className="px-28 py-28 ">
-      <Card sx={{  width:750, height:400 ,paddingX :2, }}>
+    <div className="px-28 py-28 shadow-2xl   ">
+      <Card sx={{  width:750, height:500 ,paddingX :2 ,paddingY:3}}>
         <CardMedia
           sx={{
             height: 0,
             paddingTop: '20.25%', // 16:9 aspect ratio (adjust as needed)
-            backgroundSize: 'contain' // Align content vertically to the center
+            backgroundSize: 'contain',
+            // Align content vertically to the center
           }}
           image="/handsakeabout.png"
           title="green iguana"
         />
-        <CardContent sx={{paddingTop:2}}>
-          <Typography gutterBottom variant="h5" component="div" sx={{ textAlign: 'justify', display: 'flex', justifyContent: 'center' }}>
+        <CardContent sx={{paddingTop:2,marginTop:5}}>
+          <Typography gutterBottom variant="h4" component="div" sx={{ textAlign: 'justify', display: 'flex', justifyContent: 'center' }}>
             Expert Support and Consultation
           </Typography >
-          <Typography variant="h6" gutterBottom color="black" sx={{ textAlign: 'justify', display: 'flex', justifyContent: 'center',minWidth:20 }}>
+          <Typography variant="h6" gutterBottom color="black" sx={{ textAlign: 'justify', display: 'flex', justifyContent: 'center',minWidth:20 , marginTop:3 }}>
             Dataspace provides more than just hosting services since it
             recognizes the complexities of technology. We have a knowledgeable
             support staff on hand around-the-clock who are prepared to help with

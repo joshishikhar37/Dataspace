@@ -6,7 +6,8 @@ const SearchDomain = () => {
     <section className="py-10 shadow-lg absolute top-[57%] left-[20%] flex-col   justify-center text-center h-60 w-[65%] rounded-lg bg-white ">
       <h1 className="text-xl font-bold mb-10">
         Find the Perfect Domain for your
-      </h1>
+        </h1>
+        
 
       <div className=' align-top flex justify-center'>
         <input

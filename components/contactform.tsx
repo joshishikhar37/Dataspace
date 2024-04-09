@@ -1,13 +1,35 @@
 import React from "react";
+import TextField from "@mui/material/TextField";
+import { Box, Container, Typography } from "@mui/material";
 
 const Contactform = () => {
   return (
-    <section className="w-[84%]  border-2 px-6 py-6  rounded-xl overflow-hidden shadow-xl  ">
-      <div className=" relative pl-12 py-14 text-start bg-[#0D5077] w-[42%] text-white rounded-l-xl overflow-hidden">
-        <div className="h-32 w-32 absolute top-[70%] left-[72%] rounded-full bg-[#11396e71]"></div>
-        <div className="h-60 w-60 absolute top-[75%] left-[75%] rounded-full bg-[#113A6E]"></div>
-        <h1 className="text-4xl font-extrabold">Contact Information</h1>
-        <h2 className="text-2xl font-light py-6">
+    <Container
+      className="rounded-xl text-white shadow-xl py-5 "
+      sx={{
+        display: "flex",
+        flexDirection: "row",
+        margin: 0,
+        text: "white",
+      }}
+    >
+      <Box
+        className="rounded-lg overflow-hidden relative"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "start",
+          backgroundColor: "#0D5077",
+          flexDirection: "column",
+          padding: 6,
+          width: "100%",
+        }}
+      >
+        <div className="h-36 w-36 absolute top-[63%] left-[63%] rounded-full bg-[#11396e71]"></div>
+        <div className="h-80 w-80 absolute top-[70%] left-[70%] rounded-full bg-[#113A6E]"></div>
+        <Typography variant="h4">Contact Information</Typography>
+
+        <h2 className="text-l font-light py-6">
           Feel free to contact us in case of problem
         </h2>
 
@@ -23,9 +45,65 @@ const Contactform = () => {
           <img src="/location-icon.png" alt="" className="h-8 w-8" />
           <p>Putalisadak, ktm NP</p>
         </div>
-      </div>
-      <div></div>
-    </section>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "32px",
+          width: "100%",
+          padding: 6,
+        }}
+      >
+        <div className="flex gap-12">
+          <Box>
+            <TextField
+              sx={{ minWidth: 250, paddingTop: "16px" }}
+              id="standard-basic"
+              label="First Name"
+              variant="standard"
+            />
+          </Box>
+          <Box>
+            <TextField
+              sx={{ minWidth: 250, paddingTop: "16px" }}
+              id="standard-basic"
+              label="Last Name"
+              variant="standard"
+            />
+          </Box>
+        </div>
+        <div className="flex gap-12">
+          <Box>
+            <TextField
+              sx={{ minWidth: 250, paddingTop: "16px" }}
+              id="standard-basic"
+              label="First Name"
+              variant="standard"
+            />
+          </Box>
+          <Box>
+            <TextField
+              sx={{ minWidth: 250, paddingTop: "16px" }}
+              id="standard-basic"
+              label="Last Name"
+              variant="standard"
+            />
+          </Box>
+        </div>
+        <div>
+          <Box>
+            <TextField
+              sx={{ minWidth: 550, paddingTop: "16px" }}
+              id="standard-basic"
+              label="Message"
+              placeholder="Write your message"
+              variant="standard"
+            />
+          </Box>
+        </div>
+      </Box>
+    </Container>
   );
 };
 

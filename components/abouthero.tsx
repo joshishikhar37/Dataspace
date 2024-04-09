@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import ButtonHerosection from "./buttonHerosection";
-import Image from "next/image";
 
 const Abouthero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -57,10 +55,10 @@ const Abouthero = () => {
           style={{ width: "100vw", height: "997px" }}
           className="absolute bg-black/50"
         ></div>
-        
-        <Image
+        <img
           src={slides[currentSlide].image}
           alt={slides[currentSlide].caption}
+          style={imgStyles}
           className="w-max-screen"
         />
         <div className="absolute top-[50%] left-[3%]">

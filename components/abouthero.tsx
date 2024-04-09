@@ -47,7 +47,7 @@ const Abouthero = () => {
     position: "center",
     opacity: opacity < 0 ? 0 : opacity, // Ensure opacity doesn't go below 0
     transition: "opacity 0.5s ease-in-out", // Smooth transition for opacity
-  };c
+  };
 
   return (
     <main className="flex justify-between w-[max-content] relative">

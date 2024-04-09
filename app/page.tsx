@@ -29,26 +29,25 @@ export default function Home() {
 
   return (
     <div className="flex-col text-black relative">
-      <div className="mb-28">
+      <div className="mb-64">
         <Herosection />
       </div>
 
-      <div className="absolute top-[30%] w-full">
+      <div className="absolute top-[31%] w-full">
         <SearchDomain />
       </div>
 
       <section className="">
 
-        <h1 className="flex justify-center text-4xl pt-36">
+        <h1 className="flex justify-center text-4xl ">
           Our Popular Plans & Pricing
         </h1>
-        <div className="mx-16 py-11 mb-28">
+        <div className="mx-16 mb-28">
           <Plans />
-
         </div>
       </section>
-      <section>
-        <h1 className="flex justify-center text-3xl pb-7">
+      <section className="mb-28">
+        <h1 className="flex justify-center text-4xl pb-10">
           Our Valued Costumers
         </h1>
         <Valuablecustomer />

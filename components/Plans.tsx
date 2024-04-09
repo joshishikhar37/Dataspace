@@ -1,6 +1,7 @@
 import React from "react";
 import Buttoncart from "@/components/buttoncart";
 import plans from "@/assets/plans.json";
+
 import Image from "next/image";
 
 type PlanCategory = {

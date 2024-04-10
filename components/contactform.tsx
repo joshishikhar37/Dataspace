@@ -2,8 +2,10 @@ import React from "react";
 import TextField from "@mui/material/TextField";
 import { Box, Button, Checkbox, Container, Typography } from "@mui/material";
 import { relative } from "path";
+import contactInfo from "@/assets/contactInfo.json"
 
 const Contactform = () => {
+  
   return (
     <Container
       sx={{
@@ -33,7 +35,9 @@ const Contactform = () => {
       >
         <div className="h-36 w-36 absolute top-[63%] left-[63%] rounded-full bg-[#11396e71]"></div>
         <div className="h-80 w-80 absolute top-[70%] left-[70%] rounded-full bg-[#113A6E]"></div>
-        <Typography variant="h4">Contact Information</Typography>
+        
+
+        {/* <Typography variant="h4">Contact Information</Typography>
 
         <h2 className="text-l font-light py-6">
           Feel free to contact us in case of problem
@@ -50,7 +54,7 @@ const Contactform = () => {
         <div className="flex gap-8 mt-16 mb-48 text-xl items-start align-text-bottom   ">
           <img src="/location-icon.png" alt="" className="h-8 w-8" />
           <p>Putalisadak, ktm NP</p>
-        </div>
+        </div> */}
       </Box>
       <Box
         sx={{

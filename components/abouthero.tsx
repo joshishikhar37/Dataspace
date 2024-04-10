@@ -10,7 +10,7 @@ const Abouthero = () => {
       image: "/abouthero.jpeg",
       caption: "About Us",
     },
-   
+
     // Add more slides as needed
   ];
 
@@ -36,7 +36,6 @@ const Abouthero = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
 
   // Calculate opacity based on scroll position
   const opacity = 1 - scrollPosition / window.innerHeight;
@@ -67,7 +66,14 @@ const Abouthero = () => {
             {slides[currentSlide].caption}
           </h1>
           <h2 className="pl-2 text-xl text-white w-[60%]">
-          Welcome to Dataspace, Nepal's First data center. We're more than just a service provider – we're your ally in navigating the digital realm. With a commitment to innovation and excellence, we offer secure and connected hosting solutions that serve to your unique needs. Our dedicated team is here to support you every step of the way, ensuring your digital journey is seamless and successful. Join us in shaping the future of technology in Nepal. Choose Dataspace to elevate your digital experience.
+            Welcome to Dataspace, Nepals First data center. Were more than just
+            a service provider – were your ally in navigating the digital realm.
+            With a commitment to innovation and excellence, we offer secure and
+            connected hosting solutions that serve to your unique needs. Our
+            dedicated team is here to support you every step of the way,
+            ensuring your digital journey is seamless and successful. Join us in
+            shaping the future of technology in Nepal. Choose Dataspace to
+            elevate your digital experience.
           </h2>
         </div>
       </div>

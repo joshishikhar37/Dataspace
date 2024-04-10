@@ -2,21 +2,31 @@ import React from "react";
 import Buttoncart from "@/components/buttoncart";
 import plans from "@/assets/plans.json";
 
-const Plans = () => {
-  const imagestyles = {
-    width: "308px",
-    height: "113.34px",
-  };
+import Image from "next/image";
 
+type PlanCategory = {
+  title: string;
+  description: string;
+};
+
+type PlansObject = {
+  [key: string]: PlanCategory[];
+};
+
+const Plans = () => {
   return (
-    <div className="flex justify-between mx-16">
+    <div className="flex justify-between">
       {Object.keys(plans).map((planKey: keyof PlansObject) => (
-        <div key={planKey} className=" rounded-lg w-[300px] my-10">
+        <div
+          key={planKey}
+          className="shadow-2xl rounded-lg w-[300px] my-10 mx-16"
+        >
           <div className="relative flex justify-center">
-            <img
+            <Image
               src="/plans.png"
               alt="footerimage"
-              style={imagestyles}
+              width={308}
+              height={113.34}
               className="rounded-t-lg"
             />
             <h1 className="absolute top-[60%] px-6 text-white font-black ">

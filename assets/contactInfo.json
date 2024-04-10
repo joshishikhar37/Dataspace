@@ -1,0 +1,72 @@
+{
+    "ContactInformation": {
+      "Typography": {
+        "variant": "h4",
+        "children": "Contact Information"
+      }
+    },
+    "FeelFreeToContact": {
+      "h2": {
+        "className": "text-l font-light py-6",
+        "children": "Feel free to contact us in case of problem"
+      }
+    },
+    "ContactFlex1": {
+      "div": {
+        "className": "flex gap-8 mt-24 text-xl items-start align-text-bottom",
+        "children": [
+          {
+            "img": {
+              "src": "Vector.png",
+              "alt": "",
+              "className": "h-9 w-8"
+            }
+          },
+          {
+            "p": {
+              "children": "+123 456 7890"
+            }
+          }
+        ]
+      }
+    },
+    "ContactFlex2": {
+      "div": {
+        "className": "flex gap-8 mt-16 text-xl items-start align-text-bottom",
+        "children": [
+          {
+            "img": {
+              "src": "/inbox-icon.png",
+              "alt": "",
+              "className": "h-5 w-6"
+            }
+          },
+          {
+            "p": {
+              "children": "demo@gmail.com"
+            }
+          }
+        ]
+      }
+    },
+    "ContactFlex3": {
+      "div": {
+        "className": "flex gap-8 mt-16 mb-48 text-xl items-start align-text-bottom",
+        "children": [
+          {
+            "img": {
+              "src": "/location-icon.png",
+              "alt": "",
+              "className": "h-8 w-8"
+            }
+          },
+          {
+            "p": {
+              "children": "Putalisadak, ktm NP"
+            }
+          }
+        ]
+      }
+    }
+  }
+  

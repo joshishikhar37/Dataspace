@@ -1,24 +1,30 @@
 import React from "react";
 import TextField from "@mui/material/TextField";
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Button, Checkbox, Container, Typography } from "@mui/material";
+import { relative } from "path";
 
 const Contactform = () => {
   return (
     <Container
-      className="rounded-xl text-white shadow-xl py-5 "
       sx={{
         display: "flex",
         flexDirection: "row",
-        margin: 0,
         text: "white",
+        position: "relative",
+        borderRadius: 6,
+        padding: "0px !important",
+        boxShadow: "4",
       }}
     >
       <Box
-        className="rounded-lg overflow-hidden relative"
         sx={{
           display: "flex",
           justifyContent: "center",
+          borderRadius: 6,
           alignItems: "start",
+          overflow: "hidden",
+          color: "white",
+          position: "relative",
           backgroundColor: "#0D5077",
           flexDirection: "column",
           padding: 6,
@@ -76,9 +82,11 @@ const Contactform = () => {
         <div className="flex gap-12">
           <Box>
             <TextField
+              required
               sx={{ minWidth: 250, paddingTop: "16px" }}
               id="standard-basic"
-              label="First Name"
+              label="Email"
+              type="email"
               variant="standard"
             />
           </Box>
@@ -86,7 +94,8 @@ const Contactform = () => {
             <TextField
               sx={{ minWidth: 250, paddingTop: "16px" }}
               id="standard-basic"
-              label="Last Name"
+              label="Phone Number"
+              type="number"
               variant="standard"
             />
           </Box>
@@ -101,6 +110,14 @@ const Contactform = () => {
               variant="standard"
             />
           </Box>
+        </div>
+        <div className="absolute bottom-80 right-16">
+          <Button
+            variant="contained"
+            sx={{ paddingX: 4, paddingY: 2, borderRadius: 4 }}
+          >
+            <Typography>Send</Typography>
+          </Button>
         </div>
       </Box>
     </Container>

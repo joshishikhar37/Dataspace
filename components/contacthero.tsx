@@ -48,7 +48,7 @@ const Contacthero = () => {
   };
 
   // Calculate opacity based on scroll position
-  const opacity = 1 - scrollPosition / window.innerHeight;
+  const opacity = 1.5 - scrollPosition / window.innerHeight;
 
   const imgStyles = {
     width: "100vw",

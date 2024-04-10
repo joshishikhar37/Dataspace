@@ -18,6 +18,7 @@ const Aboutcard: React.FC<AboutcardProps> = ({ title, description, image }) => {
             paddingTop: '10.25%', // 16:9 aspect ratio (adjust as needed)
             backgroundSize: 'contain',
             marginTop: 2 // Align content vertically to the center
+
           }}
           image={image}
           title={title}
@@ -28,6 +29,7 @@ const Aboutcard: React.FC<AboutcardProps> = ({ title, description, image }) => {
           </Typography >
           <Typography variant="h6" gutterBottom color="black" sx={{ textAlign: 'justify', display: 'flex', justifyContent: 'center', minWidth: 30, paddingX: 4 }}>
             {description}
+
           </Typography>
         </CardContent>
       </Card>

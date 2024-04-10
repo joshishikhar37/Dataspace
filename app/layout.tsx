@@ -29,8 +29,6 @@ export default function RootLayout({
         <div className="fixed top-[-0] w-full">
           <NavBar />
         </div>
-
-
         <Footer />
       </body>
     </html>

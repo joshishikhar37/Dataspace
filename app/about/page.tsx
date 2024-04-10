@@ -28,7 +28,7 @@ const About = () => {
           className="mx-auto py-4"
         />
       </section>
-
+      
       <div className="">
       {/* Map through the chunked keys */}
       {chunkedKeys.map((chunk, index) => (
@@ -57,5 +57,4 @@ function chunkArray(array: string | any[], size: number) {
   }
   return chunkedArr;
 }
-
 export default About;

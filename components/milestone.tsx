@@ -43,8 +43,8 @@ const Milestone: React.FC<ReusableComponentProps> = ({ desc, limit }) => {
   return (
     <div className='h-68 w-80 py-8 px-6 flex justify-center'>
       <div className='flex justify-center flex-col'>
-        <h1 className='text-6xl text-black font-semibold mx-auto'>{count}+</h1>
-        <p className='text-sm text-center font-semibold'>{desc}</p>
+        <h1 className='text-6xl font-semibold mx-auto text-white'>{count}+</h1>
+        <p className='text-sm text-center font-semibold text-white'>{desc}</p>
       </div>
     </div>
   );

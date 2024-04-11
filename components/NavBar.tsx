@@ -30,7 +30,9 @@ const NavBar = () => {
         <div className="flex justify-end">
           <ul className={`flex gap-8 absolute top-12 right-32 font-light text-2xl ${scrolled ? 'text-black' : 'text-white'}`}>
             {navItems.map((item, index) => (
-              <li key={index}>{item.title}</li>
+              <li key={index}>
+                {item.title}
+                </li>
             ))}
           </ul>
           <img src="/NavImg.jpeg" alt="" className="h-12 w-12 rounded-full absolute top-9" />

@@ -15,7 +15,7 @@ type PlansObject = {
 
 const Plans = () => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between  ">
       {Object.keys(plans).map((planKey: keyof PlansObject) => (
         <div
           key={planKey}

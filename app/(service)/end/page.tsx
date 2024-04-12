@@ -1,3 +1,4 @@
+import Plans from "@/components/Plans";
 import ServiceReuse from "@/components/serviceReuse";
 import React from "react";
 
@@ -14,7 +15,7 @@ const End = () => {
     <div>
      
         <ServiceReuse slides={slides} />
-     
+        <Plans/>
     </div>
   );
 };

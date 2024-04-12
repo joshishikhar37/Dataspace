@@ -1,3 +1,4 @@
+import Plans from "@/components/Plans";
 import ServiceReuse from "@/components/serviceReuse";
 import React from "react";
 
@@ -12,7 +13,8 @@ const Webdevelopment = () => {
   ];
   return (
         <div>
-        <ServiceReuse slides={slides} />
+      <ServiceReuse slides={slides} />
+      <Plans/>
         </div>
   );
 };

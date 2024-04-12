@@ -1,19 +1,23 @@
-import ServiceReuse from '@/components/serviceReuse'
-import React from 'react'
+import Plans from "@/components/Plans";
+import ServiceReuse from "@/components/serviceReuse";
+import React from "react";
 
 const Bare = () => {
-    const slides = [
-        {
-          image: "/abouthero.jpeg",
-          caption: "Bare Metal Server",
-          description:
-            "Introducing Dataspace Enterprise Secure Email: Elevate Your Communication with Unparalleled Protection.."
-        },
-      ];
+  const slides = [
+    {
+      image: "/abouthero.jpeg",
+      caption: "Bare Metal Server",
+      description:
+        "Introducing Dataspace Enterprise Secure Email: Elevate Your Communication with Unparalleled Protection..",
+    },
+  ];
   return (
-    <div>      <ServiceReuse slides={slides} />
+    <div>
+      {" "}
+      <ServiceReuse slides={slides} />
+      <Plans />
     </div>
-  )
-}
+  );
+};
 
-export default Bare
+export default Bare;

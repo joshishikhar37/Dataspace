@@ -51,8 +51,8 @@ const About = () => {
         Our Milestone
       </div>
         
-          <div className="flex flex-col">
-            <div className="flex justify-center gap-96 bg-slate-200">
+          <div className="flex flex-col text-black">
+            <div className="flex justify-center gap-96 bg-slate-200 ">
               <Milestone desc="Years of experience" limit={21} />
               <Milestone desc="Satisfied Clients" limit={500} />
               <Milestone desc="Valued Partner" limit={12} />

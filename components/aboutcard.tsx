@@ -1,13 +1,6 @@
 import React from "react";
-import Button from "@mui/material/Button";
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Hidden,
-  Typography,
-} from "@mui/material";
-import aboutData from "@/assets/aboutData.json";
+
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 type AboutcardProps = {
   title: string;
@@ -31,7 +24,7 @@ const Aboutcard: React.FC<AboutcardProps> = ({ title, description, image }) => {
             height: 0,
             paddingTop: "10.25%", // 16:9 aspect ratio (adjust as needed)
             backgroundSize: "contain",
-            marginTop: 2, // Align content vertically to the center
+            marginTop: 0, // Align content vertically to the center
           }}
           image={image}
           title={title}
@@ -45,14 +38,13 @@ const Aboutcard: React.FC<AboutcardProps> = ({ title, description, image }) => {
               textAlign: "justify",
               display: "flex",
               justifyContent: "center",
-              paddingY: 1,
+              paddingY: 0,
             }}
           >
             {title}
           </Typography>
           <Typography
             variant="h6"
-            gutterBottom
             color="black"
             sx={{
               textAlign: "justify",
@@ -62,12 +54,8 @@ const Aboutcard: React.FC<AboutcardProps> = ({ title, description, image }) => {
               paddingX: 4,
             }}
           >
-            {description.split(" ").slice(0, 47).join(" ")}
-            {description.length > 47 ? "..." : ""}
+            {description}
           </Typography>
-          <Button variant="text" sx={{ bottom: 0 }}>
-            view more
-          </Button>
         </CardContent>
       </Card>
     </div>

@@ -62,13 +62,7 @@ const Abouthero = () => {
           style={imgStyles}
           className="w-max-screen"
         />
-        <div className="flex-col absolute bottom-0 w-[100%]">
-            <div className="flex justify-center text-center mx-auto gap-96 ">
-              <Milestone desc="Years of experience" limit={21} />
-              <Milestone desc="Satisfied Clients" limit={500} />
-              <Milestone desc="Valued Partner" limit={12} />
-            </div>
-          </div>
+
         <div className="absolute top-[50%] left-[3%]">
           <h1 className="text-7xl text-white">
             {slides[currentSlide].caption}

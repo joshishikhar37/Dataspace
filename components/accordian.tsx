@@ -12,10 +12,32 @@ export default function ColocationAccordian() {
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : false);
     };
+  
 
   return (
-    <div>
+    <div className="custom-accordion">
+      <style>{`
+        .custom-accordion .MuiAccordion-root.Mui-expanded {
+          margin: 0;
+        }
+
+   
+        .custom-accordion .MuiAccordion-root {
+          box-shadow: none;
+          border-left: none;
+          border-right: none;
+        }
+
+        .custom-accordion .MuiAccordionSummary-root {
+          border-radius: 0;
+        }
+
+        .custom-accordion .MuiAccordionSummary-content {
+          margin: 0;
+        }
+      `}</style>
       <Accordion
+        className=""
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >

@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className={poppins.className}>
-      <body className="flex-col">
+      <body className="">
         <main className="relative">{children}</main>
 
         <div className="fixed top-[-0] w-full">

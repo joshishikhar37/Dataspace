@@ -26,8 +26,8 @@ const Plans = () => {
     slidesToScroll: 1
   };
   return (
-    <div className="">
-      <Slider {...settings}>
+    <div className="flex">
+      
         {Object.keys(plans).map((planKey: keyof PlansObject) => (
           <div
             key={planKey}
@@ -60,7 +60,7 @@ const Plans = () => {
             </div>
           </div>
         ))}
-      </Slider>
+      
     </div>
   );
 };

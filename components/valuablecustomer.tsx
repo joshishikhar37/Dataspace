@@ -32,7 +32,7 @@ const Valuablecustomer = () => {
         className="flex gap-32 items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-60} animate-infinite-scroll hover:!animated-infinite-scroll "
       >
         {logos.map((logo, index) => (
-          <div className="rounded-[30px] shadow-2xl">
+          <div className="rounded-[30px] shadow-lg">
             <li
               key={index}
               className="flex justify-center items-center"

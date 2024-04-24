@@ -1,4 +1,5 @@
 'use state'
+import Plans from '@/components/Plans';
 import ServiceReuse from '@/components/serviceReuse';
 import React from 'react'
 
@@ -12,7 +13,7 @@ const Annual = () => {
         
       ];
   return (
-      <ServiceReuse slides={slides} />
+    <><ServiceReuse slides={slides} /><Plans /></> 
   )
 }
 

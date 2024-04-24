@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import Plans from "@/components/Plans";
+
 
 const poppins = Poppins({
   weight: "400",
@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Dataspace",
-  description: "balls",
+  description: "",
 };
 
 export default function RootLayout({
@@ -23,8 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html className={poppins.className}>
-      <body className="flex-col sticky">
-        <main className="">{children}</main>
+      <body className="flex-col">
+        <main className="relative">{children}</main>
 
         <div className="fixed top-[-0] w-full">
           <NavBar />
